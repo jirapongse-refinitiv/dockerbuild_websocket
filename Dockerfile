@@ -7,7 +7,7 @@ RUN yum update -y install \
  && git clone https://github.com/refinitiv/websocket-api \
  && pip3 install requests \
  && pip3 install websocket-client \
- && cd websocket-api/Applications/Examples/EDP/python 
-WORKDIR /opt/refinitiv/websocket-api/Applications/Examples/EDP/python
+ && cd websocket-api/Applications/Examples/RDP/python 
+WORKDIR /opt/refinitiv/websocket-api/Applications/Examples/RDP/python
 CMD /bin/sh
 
