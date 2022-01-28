@@ -1,7 +1,7 @@
-FROM centos:centos7
-LABEL maintainer="Refinitiv Active Help Service"
+FROM oraclelinux:8
+LABEL maintainer="Developer Advocate"
 RUN yum update -y install \
- && yum -y install python3 git.x86_64 \
+ && yum -y install python39 python39-pip git.x86_64 \
  && mkdir -p /opt/refinitiv \
  && cd /opt/refinitiv \
  && git clone https://github.com/refinitiv/websocket-api \
