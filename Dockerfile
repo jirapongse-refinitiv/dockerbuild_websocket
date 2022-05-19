@@ -2,6 +2,7 @@ FROM oraclelinux:8
 LABEL maintainer="Developer Advocate"
 RUN yum update -y \
  && yum -y install python39 python39-pip git.x86_64 \
+ && yum clean all \
  && mkdir -p /opt/refinitiv \
  && cd /opt/refinitiv \
  && git clone https://github.com/refinitiv/websocket-api \
