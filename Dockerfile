@@ -5,6 +5,7 @@ RUN yum update -y \
  && yum clean all \
  && mkdir -p /opt/refinitiv \
  && cd /opt/refinitiv \
+ && git config --global http.sslVerify false \
  && git clone https://github.com/refinitiv/websocket-api \
  && pip3 install requests \
  && pip3 install websocket-client \
